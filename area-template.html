@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puerto Legal - [NOMBRE_AREA]</title>
+    <link rel="icon" type="image/png" href="plegal.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para páginas de área */
+        .area-hero {
+            background: linear-gradient(135deg, rgba(30,58,138,0.95) 0%, rgba(10,10,25,0.98) 100%);
+            padding: 120px 20px 60px;
+            text-align: center;
+            color: white;
+            margin-top: 76px;
+        }
+        
+        .area-hero h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+        
+        .area-content {
+            padding: 60px 20px;
+            background: white;
+            color: #333;
+        }
+        
+        .area-icon {
+            font-size: 5rem;
+            color: #1E3A8A;
+            margin-bottom: 30px;
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            height: 100%;
+            border-left: 4px solid #1E3A8A;
+            transition: transform 0.3s ease;
+        }
+        
+        .info-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(30,58,138,0.1);
+        }
+        
+        .btn-volver {
+            background: #1E3A8A;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-volver:hover {
+            background: #0D6EFD;
+            transform: translateY(-2px);
+            color: white;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+        }
+        
+        .faq-item h4 {
+            color: #1E3A8A;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .area-hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (igual que en index) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="plegal.png" alt="Puerto Legal Logo">
+                Puerto Legal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero de la página -->
+    <section class="area-hero">
+        <div class="container">
+            <div class="area-icon">[ICONO]</div>
+            <h1>[NOMBRE_AREA]</h1>
+            <p class="lead">[DESCRIPCION_CORTA]</p>
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <section class="area-content">
+        <div class="container">
+            
+            <!-- Fila 1: Descripción general -->
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2>¿Qué es el [NOMBRE_AREA]?</h2>
+                    <p class="fs-5">[DESCRIPCION_LARGA]</p>
+                </div>
+            </div>
+            
+            <!-- Fila 2: Servicios específicos -->
+            <div class="row mb-5">
+                <div class="col-12 text-center mb-4">
+                    <h2>¿En qué podemos ayudarte?</h2>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="info-box">
+                        <h4>[SUBSERVICIO_1]</h4>
+                        <p>[DESC_SUBSERVICIO_1]</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="info-box">
+                        <h4>[SUBSERVICIO_2]</h4>
+                        <p>[DESC_SUBSERVICIO_2]</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="info-box">
+                        <h4>[SUBSERVICIO_3]</h4>
+                        <p>[DESC_SUBSERVICIO_3]</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fila 3: Proceso -->
+            <div class="row mb-5">
+                <div class="col-12 text-center mb-4">
+                    <h2>Nuestro proceso</h2>
+                </div>
+                
+                <div class="col-md-3 col-6 text-center mb-4">
+                    <div class="display-4 text-primary mb-2">1️⃣</div>
+                    <h5>Primera consulta</h5>
+                    <p class="small">Gratuita y sin compromiso</p>
+                </div>
+                
+                <div class="col-md-3 col-6 text-center mb-4">
+                    <div class="display-4 text-primary mb-2">2️⃣</div>
+                    <h5>Análisis del caso</h5>
+                    <p class="small">Evaluamos tu situación</p>
+                </div>
+                
+                <div class="col-md-3 col-6 text-center mb-4">
+                    <div class="display-4 text-primary mb-2">3️⃣</div>
+                    <h5>Estrategia legal</h5>
+                    <p class="small">Diseñamos la mejor defensa</p>
+                </div>
+                
+                <div class="col-md-3 col-6 text-center mb-4">
+                    <div class="display-4 text-primary mb-2">4️⃣</div>
+                    <h5>Acompañamiento</h5>
+                    <p class="small">Soporte en todo el proceso</p>
+                </div>
+            </div>
+            
+            <!-- Fila 4: Preguntas frecuentes -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Preguntas frecuentes</h2>
+                    
+                    <div class="faq-item">
+                        <h4>¿PREGUNTA_1?</h4>
+                        <p>RESPUESTA_1</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>¿PREGUNTA_2?</h4>
+                        <p>RESPUESTA_2</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>¿PREGUNTA_3?</h4>
+                        <p>RESPUESTA_3</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Botón volver y CTA -->
+            <div class="text-center">
+                <h3 class="mb-4">¿Necesitas ayuda con tu caso?</h3>
+                <a href="index.html#contacto" class="btn btn-custom hero-btn me-3">Contáctanos</a>
+                <a href="index.html#servicios" class="btn-volver">← Volver a servicios</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer (igual que en index) -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Puerto Legal - Estudio Jurídico. Todos los derechos reservados.</p>
+            <p><a href="index.html#">Política de privacidad</a> | <a href="index.html#">Términos de uso</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
